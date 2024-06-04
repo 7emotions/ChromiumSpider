@@ -62,11 +62,10 @@
 
 ###### **安装步骤**
 
-1. 克隆本仓库
-```sh
-git clone https://github.com/7emotions/ChromiumSpider.git
+使用pip安装
+```shell
+pip install chromiumspider
 ```
-
 
 ### 使用到的框架
 

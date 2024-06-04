@@ -1,13 +1,11 @@
 from distutils.core import setup
 from setuptools import find_packages
 
-with open("README", "r") as f:
-  long_description = f.read()
 
 setup(name='chromiumspider',  # 包名
       version='1.0.0',  # 版本号
       description='一个自动管理ChromiumDriver版本的，基于Selenium开发的自动化测试爬虫框架。',
-      long_description=long_description,
+      long_description="一个自动管理ChromiumDriver版本的，基于Selenium开发的自动化测试爬虫框架。",
       author='Lorenzo Feng',
       author_email='lorenzo.feng@njust.edu.cn',
       url='https://github.com/7emotions/ChromiumSpider',
