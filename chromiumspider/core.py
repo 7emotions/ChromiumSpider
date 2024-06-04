@@ -12,10 +12,22 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 
 def find(browser: WebDriver, xpath: str) -> WebElement:
+    """
+    Find an element by xpath.
+    :param browser: 
+    :param xpath:
+    :return:
+    """
     return browser.find_element(by=By.XPATH, value=xpath)
 
 
-def determine_drive_version(app_path=r'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'):
+def determine_drive_version(app_path=r'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe') -> str:
+    """
+    Check the version of the chromium driver.
+    :param app_path: Edge application path.
+    :return: WebDriver path
+    """
+    print('[*] Checking Chromium Driver version...')
     folder_path = os.path.join(os.getcwd(), 'driver')
     file_name = 'msedgedriver.exe'
     file_path = os.path.join(folder_path, file_name)
@@ -46,6 +58,11 @@ def determine_drive_version(app_path=r'C:\\Program Files (x86)\\Microsoft\\Edge\
 
 
 def get_spider(headless=True) -> WebDriver:
+    """
+    Get Chromium Driver
+    :param headless:headless mode
+    :return: WebDriver
+    """
     options = webdriver.EdgeOptions()
     options.add_experimental_option('detach', True)
     options.add_argument('window-size=1920x3000')
