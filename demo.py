@@ -7,7 +7,7 @@ from chromiumspider.core import find
 
 if __name__ == '__main__':
     url = r'https://www.12306.cn/index/'
-    spider = get_spider(False)
+    spider = get_spider()
 
     spider.get(url)
 
