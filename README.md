@@ -38,7 +38,7 @@
 
 
  本篇README.md面向开发者
- 
+
 ## 目录
 
 - [上手指南](#上手指南)
@@ -109,9 +109,14 @@ if __name__ == '__main__':
     df.to_excel('12306.xlsx', index=False) # 结果保存至Excel文件
     spider.quit()
 
-``` 
+```
+
+**运行结果**
+
+![result](./images/res.png)
 
 #### get_spider(headless=True)
+
 该方法返回一个WebDriver
 
 #### find(spider, xpath)
